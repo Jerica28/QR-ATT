@@ -3,7 +3,8 @@ import { useCallback, useState } from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 
 import { COLORS } from '@/constants/colors';
-import { STUDENT_ID } from '@/constants/student';
+//import { STUDENT_ID } from '@/constants/student';
+import { useAuth } from '@/lib/auth';
 import { getAttendanceHistory, type AttendanceRecord } from '@/lib/database';
 
 export default function HistoryScreen() {
